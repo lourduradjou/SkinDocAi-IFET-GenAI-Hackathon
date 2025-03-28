@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-chatbot-kit-chat-container {
+	position: fixed;
+
+	bottom: 40px; /* Position it above the button */
+	left: 10%;
+	right: 20px; /* Align it to the left */
+	width: 80%; /* Set a fixed width */
+	height: 570px; /* Set a fixed height */
+	border-radius: 10px; /* Rounded corners */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+	z-index: 1000; /* Ensure it's above other content */
+	display: flex;
+	flex-direction: column;
+	background-color: white; /* Add a background color */
+}
+
+.react-chatbot-kit-chat-inner-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%; /* Ensure the inner container fills the height */
+}
+
+.react-chatbot-kit-chat-header {
+	background-color: #82877e2f;
+	color: rgb(51, 47, 47);
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.react-chatbot-kit-chat-message-container {
+	background-color: #cacec600;
+	flex-grow: 1; /* Allow the message container to grow */
+	overflow-y: auto; /* Add scroll for overflow */
+	padding: 10px; /* Add some padding */
+	/* Adjust width to 80% of parent container */
+}
+
+.react-chatbot-kit-chat-bot-message {
+	min-width: 150px; /* Ensure small messages don't get too tiny */
+	width: auto; /* Allow automatic width based on content */
+	max-width: 80%;
+	margin-left: 10px; /* Keep messages within 80% of the container */
+	background-color: #286f17;
+}
+
+/* .react-chatbot-kit-chat-input-container {
+	/* background-color:  #82877e2f;
+	padding: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	flex-shrink: 0; /* Prevent the input container from shrinking */
+/* height: 110px; */
+
+/* .react-chatbot-kit-chat-input {
+	background-color: #82877e;
+	
+	color: rgb(51, 47, 47);
+	border: none;
+	padding: 8px;
+	border-radius: 5px;
+	margin-left: 3%;
+	width: 100%;
+	
+  }
+  
+  .react-chatbot-kit-chat-input::placeholder {
+	color: white;
+	opacity: 0.7;
+  } */
+
+/* .react-chatbot-kit-chat-btn-send {
+	background-color: #aacf8c;
+	border: none;
+	padding: 8px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .react-chatbot-kit-chat-btn-send:hover {
+	background-color: #b3bab0;
+  } */
+
+/* Marquee Animation */
+.marquee-container {
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.marquee-content {
+	display: inline-block;
+	animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-50%);
+	}
+}
+
+/* Ensure chatbot stays on top */
+
+/* Main content spacing */
+.Parent-container {
+	padding-bottom: 100px; /* Prevent content from being hidden behind fixed elements */
+}

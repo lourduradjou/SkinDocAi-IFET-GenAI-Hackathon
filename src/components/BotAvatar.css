@@ -1,0 +1,17 @@
+.bot-avatar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: #8cc355; /* Background color for the bot icon */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bot-icon {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ensures the image fits properly */
+}

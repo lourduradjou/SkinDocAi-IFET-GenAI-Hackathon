@@ -1,0 +1,22 @@
+.options-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 25%;
+	margin-top: 10px;
+}
+
+.upload-button {
+	color: white; /* text-white */
+	background-color: #286f17;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	margin-left: 70px;
+}
+
+.upload-button:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
